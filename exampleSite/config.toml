@@ -1,0 +1,17 @@
+baseurl = "/"
+languageCode = "en-CN"
+title = "Yume"
+disqusShortname = "foo"
+Copyright = ""
+
+[Params]
+subtitle = "進み続けてさえいれば、遅くとも関係ない"
+footerlinks = true
+about = "/about"
+twitter = "https://twitter.com"
+github = "https://github.com"
+telegram = "https://telegram.org"
+showsRSS = true
+analytics = "UA-XXXXXXXX-X"
+twitterShortname = "foo"
+themeColor = "#9b4dca"

@@ -1,0 +1,25 @@
+.title {
+  margin-top: 25%;
+  text-align: center;
+}
+
+.main {
+  max-width: 700px!important;
+  margin: auto;
+}
+
+footer {
+  font-size: 85%;
+  opacity: .7;
+  border-top: 1px solid #eee;
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+
+code {
+  white-space: inherit!important;
+}
+
+article {
+  text-align: justify;
+}

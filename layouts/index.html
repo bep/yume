@@ -1,0 +1,49 @@
+{{ partial "header.html" . }}
+</head>
+<body>
+  <div class="container main">
+    <div class="row">
+      <div class="column column-80 column-offset-10">
+        <h3 class="title">{{ .Site.Params.subtitle }}</h3>
+      </div>
+    </div>
+    {{ range (.Data.Pages.GroupByDate "2006") }}
+    <div class="row">
+      <div class="column column-80 column-offset-10">
+        <hr>
+        <h5>{{ .Key }}</h5>
+      </div>
+    </div>
+    {{ range where .Pages "Type" "post" }}
+    <div class="row">
+      <div class="column column-80 column-offset-10">
+        <h6>
+          {{ .Date.Format "Jan 02, 2006" }}
+          &nbsp;&nbsp;<a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a>
+        </h6>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+    <div class="row">
+      <div class="column column-80 column-offset-10">
+        <br>
+        <footer>
+          {{ if .Site.Params.footerlinks }}
+          <p>Extra Info:&nbsp;&nbsp;
+            {{ with .Site.Params.about }}<a href="{{ . }}">About</a>&nbsp;&nbsp;{{ end }}
+            {{ with .Site.Params.twitter }}<a href="{{ . }}">Twitter</a>&nbsp;&nbsp;{{ end }}
+            {{ with .Site.Params.github }}<a href="{{ . }}">GitHub</a>&nbsp;&nbsp;{{ end }}
+            {{ with .Site.Params.telegram }}<a href="{{ . }}">Telegram</a>&nbsp;&nbsp;{{ end }}
+            {{ if .Site.Params.showsRSS }}<a href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml">Subscribe</a><br>{{ end }}
+          </p>
+          {{ end }}
+          {{ with .Site.Copyright }}
+          <p>{{ . }}</p>
+          <br>
+          {{ end }}
+        </footer>
+      </div>
+    </div>
+  </div>
+  {{ partial "footer.html" . }}

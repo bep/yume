@@ -1,0 +1,30 @@
+{{ partial "header.html" . }}
+<!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" type="text/css" href="/css/highlight.css"/>
+</head>
+<body>
+  <div class="container main">
+    <div class="row">
+      <div class="column">
+        <h2 class="title">{{ .Title }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <hr>
+        <article>
+          <p>{{ .Date.Format "Jan 02, 2006" }}</p>
+          <br><br>
+          {{ .Content }}
+        </article>
+      </div>
+    </div>
+    {{ partial "disqus.html" . }}
+  </div>
+  <br>
+  {{ partial "footer.html" . }}
