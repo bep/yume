@@ -4,7 +4,7 @@ licenselink = "https://github.com/nrechn/yume/blob/master/LICENSE"
 description = "A minimalistic blog theme."
 homepage = "https://github.com/nrechn/yume"
 tags = ["blog", "minimalist"]
-features = ["disqus", "code highlighting", "google analytics", "twitter card", "toolbar color"]
+features = ["minimalist design", "disqus", "code highlighting", "google analytics", "twitter card", "toolbar color"]
 min_version = 0.16
 
 [author]
