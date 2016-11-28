@@ -1,11 +1,12 @@
 {{ partial "header.html" . }}
 <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="/js/highlight.pack.js"></script>
+<script src="{{ "/js/highlight.pack.js" | relURL }}"></script>
+<script src="{{ "/js/addon.js" | relURL }}"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="stylesheet" type="text/css" href="/css/highlight.css"/>
+<link rel="stylesheet" type="text/css" href="{{ "/css/highlight.css" | relURL }}"/>
 </head>
 <body>
   <div class="container main">
