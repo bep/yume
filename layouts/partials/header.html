@@ -18,16 +18,10 @@
     <!-- CSS
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" type="text/css" href="{{ "/css/addon.css" | relURL }}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.2.0/milligram.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.2.0/milligram.min.css">
     <!-- RSS
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="{{ .Site.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <link href="{{ .Site.BaseURL }}index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <!-- Twitter Card
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="twitter:card" content="{{ .Params.twittercard }}">
-    <meta name="twitter:site" content="@{{ .Site.Params.twitterShortname }}">
-    <meta name="twitter:title" content="{{ .Title }}">
-    <meta name="twitter:description" content="{{ .Params.twitterdescription }}">
-    <meta name="twitter:image" content="{{ .Params.twitterimage }}">
+

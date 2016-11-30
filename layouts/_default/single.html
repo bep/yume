@@ -7,6 +7,13 @@
 <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link rel="stylesheet" type="text/css" href="{{ "/css/highlight.css" | relURL }}"/>
+<!-- Twitter Card
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="twitter:card" content="{{ .Params.twittercard }}">
+<meta name="twitter:site" content="@{{ .Site.Params.twitterShortname }}">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Params.twitterdescription }}">
+<meta name="twitter:image" content="{{ .Params.twitterimage }}">
 </head>
 <body>
   <div class="container main">
