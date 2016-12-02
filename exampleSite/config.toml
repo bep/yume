@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://www.example.com/"
 languageCode = "en-CN"
 title = "Yume"
 disqusShortname = "foo"
